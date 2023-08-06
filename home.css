@@ -1,0 +1,159 @@
+.collapsible {
+  cursor: pointer;
+  padding: 10px;
+  width: calc(100% - 20px);
+  border: none;
+  text-align: left;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.active {
+  background: #F4FBF9;
+}
+  
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background: #F4FBF9;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  width: 50%;
+  flex-flow: column;
+}
+.section-main {
+  width: calc(100% - 20px);
+  display: flex;
+  flex-flow: column;
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.section-choice {
+  width: 10%;
+}
+.section-title {
+  width: 70%;
+}
+.section-discount {
+  width: 20%;
+}
+.cart-item {
+  padding: 10px;
+  width: 60%;
+}
+.item-head {
+  display: flex;
+}
+.width-40 {
+  width: 40%;
+  padding: 5px;
+  margin: 5px;
+}
+body {
+color: #000;
+font-family: Metropolis;
+font-size: 14.461px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.item-price {
+  font-weight: 500;
+}
+.item-price-discounted {
+  text-decoration: line-through;
+  opacity: 0.3;
+  font-weight: 400;
+}
+.section-discount {
+  font-weight: 500;
+}
+.item-price-popular {
+  color: #007F61;
+  font-family: Inter;
+  font-size: 12.653px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.dis-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 0;
+}
+.title {
+  position: relative;
+  text-align: center;
+  color: #007F61;
+  font-family: Metropolis;
+  font-size: 18.076px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.title::before {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: #C8C8C8;;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 160px;
+}
+.title::after {
+  content: " ";
+  height: 2px;
+  width: 130px;
+  background: #C8C8C8;;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 160px;
+}
+.ship-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px
+}
+.ship-delevery {
+  color: #007F61;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cart-button {
+  margin: 10px;
+  border-radius: 4px 4px 4px 0px;
+  border: 1px solid #007F61;
+}
+.add-button {
+  width: 100%;
+  border: none;
+  background: #007F61;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 15px;
+  cursor: pointer;
+}
+.copy-right {
+  text-align: right;
+  font-style: italic;
+}
