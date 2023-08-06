@@ -104,22 +104,22 @@ line-height: normal;
 .title::before {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: calc(50% - 170px);
   background: #C8C8C8;;
   display: block;
   position: absolute;
   top: 50%;
-  left: 160px;
+  left: 30px;
 }
 .title::after {
   content: " ";
   height: 2px;
-  width: 130px;
+  width: calc(50% - 170px);
   background: #C8C8C8;;
   display: block;
   position: absolute;
   top: 50%;
-  right: 160px;
+  right: 30px;
 }
 .ship-details {
   display: flex;
@@ -156,4 +156,18 @@ line-height: normal;
 .copy-right {
   text-align: right;
   font-style: italic;
+}
+@media screen and (max-device-width: 767px) {
+  .container {
+    width: 80%;
+  }
+  .cart-item { 
+    width: 80%;
+  }
+  .title::before {
+    width: 15%;
+  }
+  .title::after {
+    width: 15%;
+  }
 }
